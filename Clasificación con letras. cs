@@ -1,0 +1,35 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Ingresa tu calificación (0-100): ");
+        int cal = int.Parse(Console.ReadLine());
+
+        if (cal < 0 || cal > 100)
+        {
+            Console.WriteLine("Calificación no valida");
+        }
+        else if (cal >= 90)
+        {
+            Console.WriteLine("A");
+        }
+        else if (cal >= 80)
+        {
+            Console.WriteLine("B");
+        }
+        else if (cal >= 70)
+        {
+            Console.WriteLine("C");
+        }
+        else if (cal >= 60)
+        {
+            Console.WriteLine("D");
+        }
+        else
+        {
+            Console.WriteLine("F");
+        }
+    }
+}
